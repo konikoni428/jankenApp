@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">jan-kenApp</string>
+    <string name="gu">グー</string>
+    <string name="pa">パー</string>
+    <string name="choki">チョキ</string>
+    <string name="janken">ジャンケン</string>
+    <string name="computerTeTextBoxString">コンピューター: %1$s</string>
+    <string name="computer">コンピューター</string>
+    <string name="player">プレイヤー</string>
+    <string name="selectExplain">選んでください</string>
+</resources>

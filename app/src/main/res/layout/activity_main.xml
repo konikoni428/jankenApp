@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+            android:id="@+id/constraintLayout5">
+
+        <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp" app:srcCompat="@drawable/gu" android:id="@+id/gu"
+                android:contentDescription="@string/gu"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/choki" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp" app:srcCompat="@drawable/choki" android:id="@+id/choki"
+                android:contentDescription="@string/choki"
+                app:layout_constraintStart_toEndOf="@+id/gu"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/pa"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+        <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp" app:srcCompat="@drawable/pa"
+                android:id="@+id/pa"
+                android:contentDescription="@string/pa"
+                app:layout_constraintStart_toEndOf="@+id/choki" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/constraintLayout1"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout5" app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/janken"
+                android:id="@+id/resultTextBox" android:maxLines="1"
+                app:autoSizeMaxTextSize="56sp" android:textSize="18sp" app:autoSizeMinTextSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/resultImageView"
+                app:layout_constraintBottom_toTopOf="@+id/playterImageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"/>
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp" app:srcCompat="@drawable/gu"
+                android:id="@+id/resultImageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@+id/resultTextBox"/>
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp" app:srcCompat="@drawable/gu"
+                android:id="@+id/playterImageView"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resultTextBox"/>
+        <TextView
+                android:text="@string/computer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/computerText" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/resultImageView"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playerText" android:text="@string/player" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/playterImageView"/>
+        <TextView
+                android:text="@string/selectExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
